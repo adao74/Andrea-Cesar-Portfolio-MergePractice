@@ -1,0 +1,16 @@
+#contact {
+    transform: scale(3);
+}
+
+#portfolio {
+    transform: skewY(-20deg);
+}
+
+#about {
+    width: 300px;
+    transition: width 2s ease-out 250ms;
+}
+
+#about:hover {
+    width: 400px;
+}
