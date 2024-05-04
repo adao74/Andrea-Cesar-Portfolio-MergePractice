@@ -1,16 +1,44 @@
 #contact {
-    transform: scale(3);
+    animation-name: font-change;
+    animation-duration: 3s;
 }
 
 #portfolio {
-    transform: skewY(-20deg);
+    animation-name: get-skewed;
+    animation-duration: 2s;
 }
 
 #about {
-    width: 300px;
-    transition: width 2s ease-out 250ms;
+    animation-name: get-skewed;
+    animation-duration: 1s;
 }
 
-#about:hover {
-    width: 400px;
+#about * {
+    font-size: 20px;
+}
+
+#about *:hover {
+    transition: font-size 2s ease-out 250ms;
+    font-size: 100px;
+}
+
+@keyframes get-skewed {
+    from {
+        transform: skewY(-20deg);
+    }
+    to {
+        transform: skewY(-30deg);
+    }
+}
+
+@keyframes font-change {
+    0% {
+        font-size: 5px;
+    }
+    25% {
+        font-size: 100px;
+    }
+    100% {
+        font-size: 150px;
+    }
 }
