@@ -1,0 +1,19 @@
+#contacto{
+    transform: scale(3);
+
+}
+
+#port{
+    trasnform: skewY(-20deg);
+
+}
+
+#me{
+
+    width: 300px;
+    transition: width 2s ease-out 250ms;
+}
+
+#me:hover{
+    width: 400px;
+}
